@@ -1,7 +1,7 @@
 # Micropython I2C communication: Raspberry Pi Pico as Responder.
 At the moment of writing, there isn't an I2C library to use RP2040 or RP2350 microprocessors as I2C Responders.<br>
 
-This code builds on existing code (see aknowledgements), by:
+This code builds on existing one ([see aknowledgements](https://github.com/AndreaFavero71/i2c_pico_responder?tab=readme-ov-file#acknowledgements)), by:
 - extending this functionality to RP2350 microprocessors.<br>
 - realizing a dataframe contruction with checksum, for data validation by the Responder.<br>
 <br><br><br>
