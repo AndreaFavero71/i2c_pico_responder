@@ -59,8 +59,9 @@ This is certainly not fast, but it's fast enough for the project I'm working on 
 2. Copy all the files from `/i2c_pico_responder/tree/main/src/pi_pico` folder to a folder in your Raspberry Pi Pico.<br>
 3. Copy the file `/i2c_pico_responder/tree/main/src/i2c_pi_zero_controller.py` to a folder in your Raspberry Pi Zero 2 (or other board).<br>
 4. Power up the Raspberry Pi Pico boards; The main.py file will be automatically executed.<br>
-5. Run the i2c_pi_zero_controller.py script at Raspberry Pi Zero 2.<br>
-6. For max I2C speed, at Raspberry Pi Zero 2, edit the /boot/config.txt file and uncomment row `dtparam=i2c_arm_baudrate=400000`.<br>
+5. Enable the I2C at raspberry Pi Zero (sudo raspi-config, Interfacing Options, I2C, select Yes to enable I2C, then reboot)
+6. Run the i2c_pi_zero_controller.py script at Raspberry Pi Zero 2.<br>
+7. For max I2C speed, at Raspberry Pi Zero 2, edit the /boot/config.txt file, uncomment row `dtparam=i2c_arm_baudrate=100000` and set it `400000`.<br>
 <br><br><br>
 
 
